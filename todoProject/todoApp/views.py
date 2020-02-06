@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+import datetime
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello World!, you are at the todoApp index page.")
+    today = datetime.datetime.now().date()
+    return render(request, 'index.html', {"today" : today})
 
 def about(request):
-    return HttpResponse("This is the about page of todoApp")
+    return render(request, 'about.html')
