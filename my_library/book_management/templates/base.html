@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{% block title %} page title {% endblock %}</title>
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="{% static '/css/style.css' %}">
+        
+    </head>
+    <body>
+        <!-- Logo -->
+        <img src="{% static '/img/logo.png' %}" alt="logo" width="200" height="200">
+        
+        <header>
+            {% include 'header.html' %}
+        </header>
+
+        <main>
+            {% block content %} content {% endblock %}
+        </main>
+        
+        <footer>
+            {% include 'footer.html' %}
+        </footer>
+
+    </body>
+</html>

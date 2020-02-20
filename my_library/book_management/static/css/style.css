@@ -1,0 +1,10 @@
+a {
+    font-size: large;
+    color: #0d06ac;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: #0d06ac;
+}
