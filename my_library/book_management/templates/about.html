@@ -1,7 +1,11 @@
 {% extends 'base.html' %}
 
-{% block title %} About Page {% endblock %}
+{% block title %} Page: About {% endblock %}
 
 {% block content %}
-    <h1>This is an about page of book-management</h1>
+    <div class="container">
+        <h1>Hello! My name is {{firstName}} {{lastName}}</h1>
+        <h2>If you want to contact me, please e-mail to me at</h2>
+        <h2>{{email}}</h2>
+    </div>
 {% endblock %}
